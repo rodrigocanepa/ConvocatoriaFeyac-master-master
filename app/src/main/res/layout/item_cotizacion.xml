@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_layoutCotizaciones"
+    style="?android:attr/listSeparatorTextViewStyle"
+    android:padding="5sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_cotizacion_notas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        tools:text="Estas son las notas del admin"/>
+
+    <TextView
+        android:id="@+id/item_cotizacion_monto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:text="Estas son las notas del admin"/>
+
+    <TextView
+        android:id="@+id/item_cotizacion_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Estas son las notas del admin"/>
+
+</LinearLayout>

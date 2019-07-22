@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6sp"
+    tools:context=".TarjetasSeleccionarLetraActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10sp"
+        android:text="Selecciona el tipo de letra que deseeas para tu tarjeta de presentación"/>
+
+    <LinearLayout
+        android:id="@+id/linearTipoLetra1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="2sp"
+        android:background="@drawable/borde_redondeado_blur_sin_fondo"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtTarjetasTipoLetra1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Tipo de letra 1"/>
+
+        <RadioButton
+            android:id="@+id/radioTarjetasTipoLetra1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTipoLetra2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="2sp"
+        android:background="@drawable/borde_redondeado_blur_sin_fondo"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtTarjetasTipoLetra2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Tipo de letra 2"/>
+
+        <RadioButton
+            android:id="@+id/radioTarjetasTipoLetra2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTipoLetra3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="2sp"
+        android:background="@drawable/borde_redondeado_blur_sin_fondo"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtTarjetasTipoLetra3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Tipo de letra 3"/>
+
+        <RadioButton
+            android:id="@+id/radioTarjetasTipoLetra3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTipoLetra4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="2sp"
+        android:background="@drawable/borde_redondeado_blur_sin_fondo"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtTarjetasTipoLetra4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Tipo de letra 4"/>
+
+        <RadioButton
+            android:id="@+id/radioTarjetasTipoLetra4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTipoLetra5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="2sp"
+        android:background="@drawable/borde_redondeado_blur_sin_fondo"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtTarjetasTipoLetra5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Tipo de letra 5"/>
+
+        <RadioButton
+            android:id="@+id/radioTarjetasTipoLetra5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTipoLetra6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="2sp"
+        android:background="@drawable/borde_redondeado_blur_sin_fondo"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtTarjetasTipoLetra6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Tipo de letra 6"/>
+
+        <RadioButton
+            android:id="@+id/radioTarjetasTipoLetra6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTipoLetraSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Siguiete"/>
+
+</LinearLayout>

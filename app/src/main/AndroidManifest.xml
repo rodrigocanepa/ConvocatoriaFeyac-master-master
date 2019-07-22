@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.colabora.soluciones.convocatoriafeyac">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!-- VERY IMPORTANT! Don't forget this permission, or in-app billing won't work. -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".ConvocatoriaFeyacApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Pyme Assistant"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".LauncherActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CotizacionesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NuevaCotizacionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerPDFActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".TarjetasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClientesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinanzasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecursosHumanosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CrearEditarTarjetasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NominasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DiagnosticoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RealizarDiagnosticoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Modelos.VerPDFDiagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TarjetasSeleccionarLetraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TarjetaDatosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VisualizarTarjetaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConceptosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuscripcionesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".web.DisenoWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DatosEmpresaDiagnosticoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DiagnosticosMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DiagnosticoGeneralActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Finanzas.MenuFinanzasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Finanzas.ProductosServiciosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Finanzas.InversionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductosDiagnosticoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ServiciosDiagnosticoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanDeNegocios.PlanNegociosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlanDeNegocios.AdmonPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".web.MenuPagWebActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.WebVisualizacionPreviaActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.aplicaciones.WebAppsSeccion1Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.aplicaciones.WebsAppsSeccion2Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.aplicaciones.WebAppsFeaturesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.comida.WebsComidaSeccion1"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.servicios.WebsServiciosSeccion1"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.servicios.WebsServiciosSeccion2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.servicios.WebsServiciosSeccion3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.servicios.WebsServiciosSeccion4"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.servicios.WebsServiciosSeccion5"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.servicios.WebsServiciosSeccion6"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.servicios.WebsServiciosSeccion7"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.servicios.WebsServiciosSeccion8"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.salud.WebsSaludSeccion1"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.salud.WebsSaludSeccion2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.salud.WebsSaludSeccion3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.salud.WebsSaludSeccion4"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.salud.WebsSaludSeccion5"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.salud.WebsSaludSeccion6"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.salud.WebsSaludSeccion7"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.productos.WebsProductosSeccion1"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.productos.WebsProductosSeccion2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.productos.WebsProductosSeccion3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.productos.WebsProductosSeccion4"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.productos.WebsProductosSeccion5"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.productos.WebsProductosSeccion6"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.comida.WebsComidaSeccion2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.comida.WebsComidaSeccion3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.comida.WebsComidaSeccion4"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.comida.WebsComidaSeccion5"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.comida.WebsComidaSeccion6"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.moda.WebsModaSeccion1"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.moda.WebsModaSeccion2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.moda.WebsModaSeccion3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.moda.WebsModaSeccion4"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.moda.WebsModaSeccion5"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.moda.WebsModaSeccion6"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.moda.WebsModaSeccion7"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.aplicaciones.WebsAppsSeccion4"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".web.aplicaciones.WebsAppsSeccion5"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

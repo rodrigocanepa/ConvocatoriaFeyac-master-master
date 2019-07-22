@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TarjetasActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeTarjetas1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5sp"
+        android:background="@drawable/borde_redondeado_blur_sin_fondo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imgTarjeta1Front"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:layout_marginTop="10sp"
+                android:src="@drawable/pyme_logo"/>
+
+            <ImageView
+                android:id="@+id/imgTarjeta1Back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:layout_marginTop="10sp"
+                android:src="@drawable/pyme_logo"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTarjetasNoCreada1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="TARJETA DE PRESENTACIÓN 1 NO CREADA"/>
+
+        <TextView
+            android:id="@+id/txtTarjetasTitutlo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:text="TARJETA DE PRESENTACIÓN 1"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeTarjetas2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5sp"
+        android:background="@drawable/borde_redondeado_blur_sin_fondo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imgTarjeta2Front"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:layout_marginTop="10sp"
+                android:src="@drawable/pyme_logo"/>
+
+            <ImageView
+                android:id="@+id/imgTarjeta2Back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:layout_marginTop="10sp"
+                android:src="@drawable/pyme_logo"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTarjetasNoCreada2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="TARJETA DE PRESENTACIÓN 2 NO CREADA"/>
+
+        <TextView
+            android:id="@+id/txtTarjetasTitutlo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:text="TARJETA DE PRESENTACIÓN 2"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeTarjetas3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5sp"
+        android:background="@drawable/borde_redondeado_blur_sin_fondo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imgTarjeta3Front"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:layout_marginTop="10sp"
+                android:src="@drawable/pyme_logo"/>
+
+            <ImageView
+                android:id="@+id/imgTarjeta3Back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:layout_marginTop="10sp"
+                android:src="@drawable/pyme_logo"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTarjetasNoCreada3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="TARJETA DE PRESENTACIÓN 3 NO CREADA"/>
+
+        <TextView
+            android:id="@+id/txtTarjetasTitutlo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:text="TARJETA DE PRESENTACIÓN 3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeTarjetas4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5sp"
+        android:background="@drawable/borde_redondeado_blur_sin_fondo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imgTarjeta4Front"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:layout_marginTop="10sp"
+                android:src="@drawable/pyme_logo"/>
+
+            <ImageView
+                android:id="@+id/imgTarjeta4Back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20sp"
+                android:layout_marginTop="10sp"
+                android:src="@drawable/pyme_logo"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTarjetasNoCreada4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="TARJETA DE PRESENTACIÓN 4 NO CREADA"/>
+
+        <TextView
+            android:id="@+id/txtTarjetasTitutlo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5sp"
+            android:layout_centerHorizontal="true"
+            android:text="TARJETA DE PRESENTACIÓN 4"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_ver_mi_pag"
+        android:icon="@drawable/ic_desktop_mac_black_24dp"
+        android:title="Ver mi página web" />
+
+    <item
+        android:id="@+id/action_editar_mi_pag"
+        android:icon="@drawable/ic_web_black_24dp"
+        android:title="Editar mi página web" />
+
+</menu>

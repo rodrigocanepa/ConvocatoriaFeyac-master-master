@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="?android:attr/listSeparatorTextViewStyle"
+    android:padding="4sp">
+
+    <TextView
+        android:id="@+id/item_cliente_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Soluciones Colabora"/>
+
+
+    <TextView
+        android:id="@+id/item_cliente_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        tools:text="Es una empresa de TI"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Direccion"/>
+
+    <TextView
+        android:id="@+id/item_cliente_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Es una empresa de TI"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Correo"/>
+
+    <TextView
+        android:id="@+id/item_cliente_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="rodrigo@gmail.com"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Teléfono"/>
+
+            <TextView
+                android:id="@+id/item_cliente_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="9811037861"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Horario"/>
+
+            <TextView
+                android:id="@+id/item_cliente_horario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:text="8 am a 6 pm"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnItemClientesEditar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="Editar"/>
+
+        <Button
+            android:id="@+id/btnItemClientesEliminar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="Eliminar"/>
+
+    </LinearLayout>
+
+</LinearLayout>

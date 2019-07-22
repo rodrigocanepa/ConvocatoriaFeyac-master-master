@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e98a7</color>
+    <color name="colorPrimaryDark">#14769a</color>
+    <color name="colorAccent">#82a33b</color>
+
+    <color name="colorMoradoSoluciones">#564185</color>
+    <color name="colorGray">#b7b7b7</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+</resources>

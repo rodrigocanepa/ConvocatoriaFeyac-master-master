@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuscripcionesActivity">
+
+    <ImageView
+        android:id="@+id/imgSuscripciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/txtSuscripcionTexto"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="50sp"
+        android:text="Realiza cotizaciones, tarjetas de presentación, análisis financieros, cálculo de nóminas, diagnóstico de tu empresa y ordena la base de datos de tus clientes y proveedores, todo esto y mucho más con Pyme Assitant"/>
+
+    <Button
+        android:id="@+id/btnSuscripcion"
+        android:layout_below="@id/txtSuscripcionTexto"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20sp"
+        android:layout_width="220sp"
+        android:layout_marginTop="10sp"
+        android:onClick="suscripcionCliked"
+        android:background="@drawable/borde_redondeado_blur"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:text="PRUÉBALO GRATIS"/>
+
+    <TextView
+        android:layout_below="@id/btnSuscripcion"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10sp"
+        android:text="2 meses de prueba gratis y luego pagas MXN 99.00/mes"/>
+
+</RelativeLayout>

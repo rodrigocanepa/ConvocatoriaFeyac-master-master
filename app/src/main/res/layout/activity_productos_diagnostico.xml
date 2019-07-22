@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6sp"
+    android:orientation="vertical"
+    tools:context=".ProductosDiagnosticoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:text="Las siguientes preguntas están conformadas por 10 reactivos los cuales ayudará a mejorar el sector de servicios y economía local."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. ¿Cuántos productos vendes aproximadamente?"/>
+
+            <EditText
+                android:id="@+id/editProductos1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. ¿Cuál es el producto que más vendes?"/>
+
+            <EditText
+                android:id="@+id/editProductos2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. ¿Cuánto cuesta el producto más barato?"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/editProductos3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. ¿Cuánto cuesta el productos más caro?"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/editProductos4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. ¿Podría escribir de dónde vienen sus clientes? (Por ejemplo: de la zona, de otras colonias, en línea u otra opción)" />
+
+            <EditText
+                android:id="@+id/editProductos5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. ¿Podría mencionarnos aproximadamente cuanto vendió el mes pasado?"/>
+
+            <EditText
+                android:id="@+id/editProductos6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. ¿Ha pedido algún financiamiento para su negocio?"/>
+
+            <EditText
+                android:id="@+id/editProductos7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. ¿Podría mencionarnos aproximadamente cuantos clientes atiende por semana?" />
+
+            <EditText
+                android:id="@+id/editProductos8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. ¿Podría mencionarnos aproximadamente cuantos clientes compran por semana?"/>
+
+            <EditText
+                android:id="@+id/editProductos9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. ¿Contrata personas de más por temporada?"/>
+
+            <EditText
+                android:id="@+id/editProductos10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"/>
+
+
+            <Button
+                android:id="@+id/productosFinalizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Finalizar"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

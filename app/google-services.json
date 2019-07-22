@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "970136452904",
+    "firebase_url": "https://pyme-assistant.firebaseio.com",
+    "project_id": "pyme-assistant",
+    "storage_bucket": "pyme-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970136452904:android:ddeac10d71393dcc",
+        "android_client_info": {
+          "package_name": "com.colabora.soluciones.convocatoriafeyac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970136452904-o3cu6kag1esuedsntraaqp9avs903ov1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGnIJ1zXzypRK-qp6i9NVVQnWiNtOL64Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

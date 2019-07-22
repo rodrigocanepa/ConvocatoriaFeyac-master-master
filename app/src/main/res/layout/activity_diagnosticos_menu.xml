@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DiagnosticosMenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="4sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="2sp"
+        android:paddingRight="4sp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgStartupDiagnosticoNecesidad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/datosgenerales"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATOS GENERALES"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtStartupDiagnosticoMainDatosGenerales"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            tools:text="Estado: No respondido"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            android:text="Preguntas: 32"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="4sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="2sp"
+        android:paddingRight="4sp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgStartupDiagnosticoEstatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/estatusactual"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESTATUS ACTUAL"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtStartupDiagnosticoMainEstatus"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            tools:text="Estado: No respondido"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            android:text="Preguntas: 60"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="2sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="4sp"
+        android:paddingRight="4sp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgStartupDiagnosticoMarketing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/marketing"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SERVICIOS"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtStartupDiagnosticoMainMarketing"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            tools:text="Estado: No respondido"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            android:text="Preguntas: 10"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="2sp"
+        android:paddingLeft="4sp"
+        android:paddingBottom="4sp"
+        android:paddingRight="4sp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgStartupDiagnosticoProcesos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/otrasareas"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCTOS"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtStartupDiagnosticoMainProcesos"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            tools:text="Estado: No respondido"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="6sp"
+            android:textColor="@android:color/white"
+            android:text="Preguntas: 10"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5sp"
+    tools:context=".VisualizarTarjetaActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/relativeTarjetaFinalizada1"
+            android:layout_width="700sp"
+            android:layout_height="388sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imgVisualizarTajetaDatos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/qrTipo1"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="18sp"
+                android:layout_marginBottom="18sp"/>
+
+            <ImageView
+                android:id="@+id/qrTipo2"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18sp"
+                android:layout_marginBottom="18sp"/>
+
+            <LinearLayout
+                android:id="@+id/linearVisualizacion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20sp"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaNombre1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    tools:text="Juan Pérez Ramos"/>
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaCargo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textSize="22sp"
+                    android:textStyle="italic"
+                    tools:text="Ventas"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaTelefono1"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="9811037861"
+                        android:textSize="18sp"/>
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaCorreo1"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:textSize="18sp"
+                        tools:text="ric6191994@gmail.com" />
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_email_black_24dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearDireccion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaDireccion1"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="Calle 23 x Av. Mérida 2000 Col. Lindavista"
+                        android:textSize="18sp"/>
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPagWeb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaPagina1"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="www.solucionescolabora.com"
+                        android:textSize="18sp"/>
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_star_black_24dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearFacebook1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaFacebook1"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="Soluciones Colabora"
+                        android:textSize="18sp"/>
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_facebook_app_logo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearInstagram1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaInstragram1"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="SolucionesColabora"
+                        android:textSize="18sp"/>
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_instagram_symbol"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearVisualizacion2"
+                android:layout_width="450sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="18sp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaNombre2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    tools:text="Juan Pérez Ramos"/>
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaCargo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="22sp"
+                    android:textStyle="italic"
+                    tools:text="Ventas"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaTelefono2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        tools:text="9811037861"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_email_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaCorreo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        tools:text="ric6191994@gmail.com" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearDireccion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaDireccion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="Calle 23 x Av. Mérida 2000 Col. Lindavista"
+                        android:textSize="19sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPagWeb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_star_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaPagina2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="www.solucionescolabora.com"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearFacebook2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_facebook_app_logo"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaFacebook2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="Soluciones Colabora"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearInstagram2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_instagram_symbol"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaInstragram2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="SolucionesColabora"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearVisualizacion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50sp"
+                android:visibility="visible"
+                android:layout_marginLeft="30sp"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaNombre3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    tools:text="Juan Pérez Ramos"/>
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaCargo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textStyle="italic"
+                    tools:text="Ventas"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12sp">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12sp"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaTelefono3"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        tools:text="9811037861"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12sp"
+                        android:src="@drawable/ic_email_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaCorreo3"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        tools:text="ric6191994@gmail.com" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearDireccion3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12sp"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaDireccion3"
+                        android:layout_width="380sp"
+                        android:layout_height="wrap_content"
+                        tools:text="Calle 23 x Av. Mérida 2000 Col. Lindavista"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPagWeb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12sp"
+                        android:src="@drawable/ic_star_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaPagina3"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        tools:text="www.solucionescolabora.com"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearFacebook3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12sp"
+                        android:src="@drawable/ic_facebook_app_logo"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaFacebook3"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        tools:text="Soluciones Colabora"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearInstagram3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12sp"
+                        android:src="@drawable/ic_instagram_symbol"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaInstragram3"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        tools:text="SolucionesColabora"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/relativeTarjetaFinalizada2"
+            android:layout_width="700sp"
+            android:layout_height="388sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imgVisualizarTarjetaDatos2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgTarjetaLogo"
+                android:layout_width="380sp"
+                android:layout_height="380sp"
+                android:layout_marginStart="10sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/relativeTarjetaFinalizada1"
+            android:layout_width="350sp"
+            android:layout_height="194sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imgVisualizarTajetaDatos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/qrTipo1"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="9sp"/>
+
+            <ImageView
+                android:id="@+id/qrTipo2"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="9sp"/>
+
+            <LinearLayout
+                android:id="@+id/linearVisualizacion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20sp"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaNombre1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    tools:text="Juan Pérez Ramos"/>
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaCargo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textSize="11sp"
+                    android:textStyle="italic"
+                    tools:text="Ventas"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaTelefono1"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="9811037861"
+                        android:textSize="9sp"/>
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaCorreo1"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:textSize="9sp"
+                        tools:text="ric6191994@gmail.com" />
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_email_black_24dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearDireccion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaDireccion1"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="Calle 23 x Av. Mérida 2000 Col. Lindavista"
+                        android:textSize="9sp"/>
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPagWeb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaPagina1"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="www.solucionescolabora.com"
+                        android:textSize="9sp"/>
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_star_black_24dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearFacebook1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaFacebook1"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="Soluciones Colabora"
+                        android:textSize="9sp"/>
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_facebook_app_logo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearInstagram1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaInstragram1"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="SolucionesColabora"
+                        android:textSize="9sp"/>
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6sp"
+                        android:src="@drawable/ic_instagram_symbol"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearVisualizacion2"
+                android:layout_width="290sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8sp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaNombre2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    tools:text="Juan Pérez Ramos"/>
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaCargo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="11sp"
+                    android:textStyle="italic"
+                    tools:text="Ventas"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaTelefono2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        tools:text="9811037861"
+                        android:textSize="9sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_email_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaCorreo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="9sp"
+                        tools:text="ric6191994@gmail.com" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearDireccion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaDireccion2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="Calle 23 x Av. Mérida 2000 Col. Lindavista"
+                        android:textSize="9sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPagWeb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_star_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaPagina2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="www.solucionescolabora.com"
+                        android:textSize="9sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearFacebook2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_facebook_app_logo"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaFacebook2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        tools:text="Soluciones Colabora"
+                        android:textSize="9sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearInstagram2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_instagram_symbol"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaInstragram2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        tools:text="SolucionesColabora"
+                        android:textSize="9sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearVisualizacion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25sp"
+                android:visibility="invisible"
+                android:layout_marginLeft="20sp"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaNombre3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    tools:text="Juan Pérez Ramos"/>
+
+                <TextView
+                    android:id="@+id/txtVisualizarTarjetaCargo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textStyle="italic"
+                    tools:text="Ventas"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_call_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaTelefono3"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        tools:text="9811037861"
+                        android:textSize="9sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_email_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaCorreo3"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:textSize="9sp"
+                        tools:text="ric6191994@gmail.com" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearDireccion3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_location_on_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaDireccion3"
+                        android:layout_width="180sp"
+                        android:layout_height="wrap_content"
+                        tools:text="Calle 23 x Av. Mérida 2000 Col. Lindavista"
+                        android:textSize="9sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearPagWeb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_star_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaPagina3"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        tools:text="www.solucionescolabora.com"
+                        android:textSize="9sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearFacebook3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_facebook_app_logo"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaFacebook3"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        tools:text="Soluciones Colabora"
+                        android:textSize="9sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearInstagram3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:padding="2sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_instagram_symbol"/>
+
+                    <TextView
+                        android:id="@+id/txtVisualizarTarjetaInstragram3"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        tools:text="SolucionesColabora"
+                        android:textSize="9sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/relativeTarjetaFinalizada2"
+            android:layout_width="350sp"
+            android:layout_height="194sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imgVisualizarTarjetaDatos2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgTarjetaLogo"
+                android:layout_width="95sp"
+                android:layout_height="95sp"
+                android:layout_marginStart="10sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnGuardarTarjeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="Guardar"/>
+
+        <Button
+            android:id="@+id/btnCompartirTarjeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="Guardar y compartir"/>
+    </LinearLayout>
+
+
+</LinearLayout>

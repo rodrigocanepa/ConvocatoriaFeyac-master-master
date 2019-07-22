@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_Perfil"
+        android:orderInCategory="100"
+        android:title="Mi Perfil"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_diagnostico"
+        android:orderInCategory="100"
+        android:title="Diagnóstico"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_plan"
+        android:orderInCategory="100"
+        android:title="Plan de negocios"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_administrador"
+        android:orderInCategory="100"
+        android:title="Administrador"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_Cerrar"
+        android:orderInCategory="100"
+        android:title="Cerrar Sesión"
+        app:showAsAction="never" />
+</menu>
